@@ -1,41 +1,125 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
-#body{
-  background-color: rgba(147, 204, 15, 0.925);
-  margin: 30px 30px;
-  height: 100%
-}
-
-.options, .primeiroSet, .segundoSet{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.item{
-  background-color: purple;
-  border-radius: 10%;
-  width: 140px;
-  height: 120px;
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 50px;
-}
-
 img{
-  display: flex;
-  width: 90%;
-  height: 90%;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
- }
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
 
+}
+
+.container{
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start ;
+    text-align: center;
+}
+
+.page_container{
+    margin: 20px;
+    background-color:rgb(167, 154, 85);
+    border-radius: 2%;
+}
+
+#title{
+    margin: 20px 20px;
+}
+
+.option1, .option2, .option3, .option4{
+    padding: 10px 10px 10px 10px;
+} 
+
+.fim_encomenda{
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center ;
+  
+}
+
+.fim_encomenda_item {
+    display: flex;
+    text-align: center;
+}
+
+#option1_1, #option2_2, #option3_3, #option4_4{
+   margin-left:  100px;
+   margin-right: 100px;
+   background-color: darkgoldenrod;
+   border-radius: 2%;
+   padding: 25px 25px;
+}
+
+#option2_2{
+    background-color: rgb(19, 197, 19);
+}
+
+#option3_3{
+    background-color: chocolate;   
+}
+
+#option4_4{
+    background-color: rgb(2, 69, 71);
+    color:papayawhip;
+}
+
+#options_container, #nextSteps{
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start ;
+    text-align: center;
+}
+
+.text_left{
+    text-align: left;
+}
+
+.text_center{
+    text-align: center;
+    padding-top: 20px;
+}
+
+p, h1, h3, h4{
+    font-weight: bold;
+}
+
+#gridresumo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.desaparecer{
+    display: none;
+}
+
+#intValorEncomenda{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#resumo {
+    margin: 30px 30px;
+    background-color: rgb(191, 226, 223);
+    border-radius: 5%;
+}
+
+#mainForm{
+    margin-top: 25px;
+    margin-left: 270px;
+    margin-right: 270px;
+    
+}
+
+#formTitle{
+    padding-top: 20px;
+    text-align: center;
+}

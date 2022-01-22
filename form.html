@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tables">
+        <link rel="stylesheet" type=text/CSS href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <title>Formulário</title>
+    </head>
+    <body>
+        
+        <h3 id="formTitle">Só precisamos de alguns dados teus</h3>
+        
+        <div id="mainForm">
+        <form action="./confEnvio.html" method="post">
+                <div class="mb-3">
+                    <label for="form-name" class="form-label">Nome*</label>
+                        <input type="text" id="form-name" name="user-name" class="form-control" placeholder="Basta o teu nome próprio e apelido" required><br>
+                    <label for="form-email" class="form-label">E-mail*</label>
+                        <input type="email" id="form-email" name="user-email" class="form-control" placeholder="Exemplo: nome@gmail.com" required><br>
+                    <label for="form-telefone" class="form-label">Número de telemóvel*</label>
+                        <input type="tel" id="form-telefone" name="user-telefone" class="form-control" required minlength="9" maxlength="9" placeholder="Exemplo: 912 333 444"><br>
+                    <label for="form-morada" class="form-label">Morada de envio*</label>
+                        <input type="text" id="form-morada" name="user-morada" placeholder="Onde queres receber a tua refeição?" class="form-control" required><br>
+                        <input type="submit" value="Finalizar Compra" class="btn btn-success" required onclick="esvaziaCarrinho()">
+                        <a href="./index.html" class="btn btn-danger" onclick="cancelarEncomenda()" >Cancelar encomenda</a>
+                    <script type="text/javascript">
+                        function cancelarEncomenda(){
+                            localStorage.clear();
+                            alert("Tudo o que tinhas em carrinho foi anulado.")
+                        }
+                        function  esvaziaCarrinho(){
+                            localStorage.clear();
+                        }
+
+                    </script>
+
+                </div>
+        </form>
+    </div>
+
+     
+    </body>
+</html>

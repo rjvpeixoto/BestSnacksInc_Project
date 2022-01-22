@@ -5,57 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" type=text/CSS href="style.css">
-    <script type="text/"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-        <title>Refeições</title>
+        <title>Best Snacks</title>
 </head>
 <body>
-    <div id="body">
-        <h1 class="text-3xl font-bold underline">
-            Página Principal
-        </h1>
-        <div>
+    <div class="page_container">
+            <div id="title">
+                <h1>Best Snacks Inc.</h1>
+                <p>No Best Snacks Inc. podes encontrar os mais saborosos snacks, a qualquer hora, sempre que te apetecer. </p>
+                <p>Por cada snack encomendado podes de escolher um dos extras disponíveis sem pagares mais por isso.</p>
+                <p>Escolhe aquele que te está a apetecer e disfruta.</p>
+                <p>Depois de fazeres a tua encomenda, clica no botão "Finalizar encomenda" no fim da página para receberes a tua encomenda onde estiveres.</p>
+            <div>
 
-        </div>
-       
-            <div class="options" >
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img2.png" alt="">
-                        <button><a href="file:///C:/Users/Ricardo/Desktop/Projeto/Files%20v2/breakfast.html" title=Opções target=””> 
-                        Veja as opções disponíveis </a> </button>
+                    <div class="container">
+                        <div class="option1" ></div>
+                        <div class="option2" ></div>
+                        <div class="option3" ></div>
+                        <div class="option4" ></div>
                     </div>
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img2.png" alt="">
-                        <button> Veja as opções disponíveis </button>
+                    <div class="fim_encomenda">
+                        <a href="./resumoEncomenda.html" target="" class="btn btn-info" class="fim_encomenda_item">Finalizar Encomenda</a>
+                        <a id="ResetGeralCarrinho" class="btn btn-danger" class="fim_encomenda_item" onclick="ResetGeralCarrinho()">Esvaziar o carrinho</a>               
                     </div>
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img3.png" alt="">
-                        <button> Veja as opções disponíveis </button>
-                    </div>
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img4.png" alt="">
-                        <button> Veja as opções disponíveis </button>
-                    </div>
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img5.png" alt="">
-                        <button> Veja as opções disponíveis </button>
-                    </div>
-                    <div class="item">
-                        <img src="C:\Users\Ricardo\Desktop\Projeto\img\img6.png" alt="">
-                        <button> Veja as opções disponíveis </button>
-                    </div>
-            </div>
-            <div class = "order">
-                <h2> A sua encomenda</h2>
-                    <p>Ainda não fez encomenda. Seleciona o tipo de refeição que deseja e faça a sua encomenda.</p>
-
-           
+                    <script type="text/javascript">
+                        function ResetGeralCarrinho(){
+                            localStorage.clear();
+                            alert("Neste momento o teu carrinho está vazio.\n"
+                            + "\n Podes começar a encomendar a qualquer momento.");
+                        }
+                    </script>
     </div>
-
-
-    
-</body>
+              
 </html>

@@ -1,0 +1,25 @@
+#body{
+  background-color: rgba(26, 25, 31, 0.925);
+  margin: 30px 30px;
+  border-radius: 10px;
+  height: 80vh;
+  text-align: center;
+}
+
+h1, h3 {
+  color: white;
+  font-size: 40px;
+}
+
+p {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
