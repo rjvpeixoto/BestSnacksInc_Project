@@ -447,7 +447,7 @@ function guardaEncomendaOption2(){
 
     alert("De seguida podes retroceder para a página principal." 
         + "\n Aí poderás continuar a encomendar ou finalizar a tua encomenda." 
-        + "\n Em alternativa, ainda podes anular a tua encomenda de panquecas, ou recomeçá-la do zero.");
+        + "\n Em alternativa, ainda podes anular a tua encomenda de gelados, ou recomeçá-la do zero.");
 }
 
     function recomeçarOption2(){
@@ -821,7 +821,7 @@ function guardaEncomendaOption4(){
 
     alert("De seguida podes retroceder para a página principal." 
         + "\n Aí poderás continuar a encomendar ou finalizar a tua encomenda." 
-        + "\n Em alternativa, ainda podes anular a tua encomenda de tosta mista, ou recomeçá-la do zero.");
+        + "\n Em alternativa, ainda podes anular a tua encomenda de wrap vegetariano, ou recomeçá-la do zero.");
 }
 
     function recomeçarOption4(){
